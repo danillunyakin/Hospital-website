@@ -1,0 +1,25 @@
+.hero {
+  &__container {
+    display: flex;
+  }
+
+  &__wrap {
+    &-info {
+      padding-left: 15px;
+      max-width: 850px;
+    }
+
+    &-image {
+    }
+  }
+
+  &__image {
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 80px;
+  }
+}

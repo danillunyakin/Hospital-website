@@ -15,10 +15,13 @@ html {
 }
 
 .page__body {
+  color: var(--dark-color);
   margin: 0;
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  background-color: var(--light-bg-color);
+  border-radius: 5px;
 }
 
 img {
@@ -29,6 +32,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .site-container {
@@ -81,10 +85,22 @@ a {
 .container {
   margin: 0 auto;
   max-width: var(--container-width);
-  background-color: var(--light-bg-color);
-  border-radius: 5px ;
+  //background-color: var(--light-bg-color);
+  // border-radius: 5px;
 }
 
 .centered {
   text-align: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
